@@ -1,4 +1,4 @@
-package tree.Q11725;
+package Baekjoon.tree.Q11725;
 
 import java.util.Scanner;
 

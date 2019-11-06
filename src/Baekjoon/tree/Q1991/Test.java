@@ -1,4 +1,4 @@
-package tree.Q1991;
+package Baekjoon.tree.Q1991;
 
 public class Test {
 	public static void main(String[] args) {

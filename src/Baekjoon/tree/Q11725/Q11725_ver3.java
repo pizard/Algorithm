@@ -1,4 +1,4 @@
-package tree.Q11725;
+package Baekjoon.tree.Q11725;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -37,12 +37,12 @@ public class Q11725_ver3 {
 			}
 
 			int n1, n2;
-			for(int i=0; i<n-1; i++){		// n-1È¸ ¹Ýº¹
+			for(int i=0; i<n-1; i++){		// n-1È¸ ï¿½Ýºï¿½
 				StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 				n1 = Integer.parseInt(st.nextToken().trim(), 10);
 				n2 = Integer.parseInt(st.nextToken().trim(), 10);
-				nodes[n1].add(new Node(n2));	// n1ÀÌ¶ó´Â nodes arrayList¿¡ n2¶ó´Â Node¸¦ ³ÖÀ½
-				nodes[n2].add(new Node(n1));	// ¹Ý´ë·Î Àû¿ë
+				nodes[n1].add(new Node(n2));	// n1ï¿½Ì¶ï¿½ï¿½ nodes arrayListï¿½ï¿½ n2ï¿½ï¿½ï¿½ Nodeï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+				nodes[n2].add(new Node(n1));	// ï¿½Ý´ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 			}
 			
 			arrangement(1);

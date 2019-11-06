@@ -1,4 +1,4 @@
-package graph.Q7576;
+package Baekjoon.graph.Q7576;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -55,7 +55,7 @@ public class Q7577_v3 {
 	
 	private void solve(int x, int y, int count){
 		if((0<x && x<X) && (0<y&&y<Y) && (check[x][y] != true)){
-			// ÁøÇà
+			// ï¿½ï¿½ï¿½ï¿½
 			// x-1 x+1
 			// y-1 y+1
 			tomato[x][y] = 1;

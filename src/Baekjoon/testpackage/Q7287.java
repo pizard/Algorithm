@@ -1,4 +1,4 @@
-package testpackage;
+package Baekjoon.testpackage;
 
 import java.util.Scanner;
 
@@ -41,7 +41,7 @@ public class Q7287 {
 		System.out.println("---------------- goalPoint ----------------");
 		goalPoint = scan.nextInt();
 		
-		System.out.println("---------------- °á°ú ----------------");
+		System.out.println("---------------- ï¿½ï¿½ï¿½ ----------------");
 		System.out.println(towerBuildTime[goalPoint-1]);
 		}
 		

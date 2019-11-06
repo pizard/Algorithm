@@ -1,4 +1,4 @@
-package ACM_IPCP_KOREA__2016;
+package Baekjoon.ACM_IPCP_KOREA__2016;
 
 import java.util.Arrays;
 import java.util.Scanner;

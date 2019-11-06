@@ -1,4 +1,4 @@
-package testpackage;
+package Baekjoon.testpackage;
 
 import java.util.Scanner;
 
@@ -11,14 +11,14 @@ public class Q1007 {
 		for(int i = 0; i<T; i++){
 			N = scan.nextInt();
 			int[][] P = new int [N][2];
-			// ÁÂÇ¥ÀÔ·Â
+			// ï¿½ï¿½Ç¥ï¿½Ô·ï¿½
 			for(int j=0; j<N; j++){
 				P[j][0] = scan.nextInt();
 				P[j][1] = scan.nextInt();
 				sumx += P[j][0];
 				sumy += P[j][1];
 				
-				// °öÇÏ±â?
+				// ï¿½ï¿½ï¿½Ï±ï¿½?
 				counting = counting * (j+1);
 				
 			}

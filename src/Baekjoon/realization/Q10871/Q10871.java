@@ -1,4 +1,4 @@
-package realization.Q10871;
+package Baekjoon.realization.Q10871;
 
 import java.io.BufferedReader;
 import java.io.IOException;

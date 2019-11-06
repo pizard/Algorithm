@@ -1,4 +1,4 @@
-package DP.Q2579;
+package Baekjoon.DP.Q2579;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,9 +15,9 @@ public class Q2579 {
 		main.init();
 		
 	}
-	// ÇÑ°è´Ü or µÎ°è´Ü
-	// ¿¬¼ÓµÈ 3°³ÀÇ °è´Ü X
-	// ¸¶Áö¸· °è´Ü ÇÊ¼ö!
+	// ï¿½Ñ°ï¿½ï¿½ or ï¿½Î°ï¿½ï¿½
+	// ï¿½ï¿½ï¿½Óµï¿½ 3ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ X
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Ê¼ï¿½!
 	private int[] step;
 	private int[][] result;
 	

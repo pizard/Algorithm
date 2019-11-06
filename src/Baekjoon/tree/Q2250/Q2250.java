@@ -1,11 +1,11 @@
-package tree.Q2250;
+package Baekjoon.tree.Q2250;
 
 import java.util.Scanner;
 
 public class Q2250 {
 
 	public static Tree[] node;
-	public static int root = 1; //ÃÊ±â°ª
+	public static int root = 1; //ï¿½Ê±â°ª
 	public static int R[];
 	public static int L[];
 	public static void main(String[] args) {
@@ -15,7 +15,7 @@ public class Q2250 {
 		R = new int[N+1];
 		L = new int[N+1];
 		int n1=0,n2=0,n3=0;
-		// Tree »ý¼º
+		// Tree ï¿½ï¿½ï¿½ï¿½
 		for(int i=1; i<N+1; i++){
 			node[i] = new Tree(i);
 		}
@@ -35,7 +35,7 @@ public class Q2250 {
 			}
 		}
 		
-		// ·çÆ® ³ëµå ±¸ÇÏ±â!
+		// ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï±ï¿½!
 		int check = 1;
 		while(check != 0){
 			if(node[check].getParent() != null){
@@ -46,11 +46,11 @@ public class Q2250 {
 			}
 		}
 		
-		// node order ¹× level ±¸ÇÏ±â
+		// node order ï¿½ï¿½ level ï¿½ï¿½ï¿½Ï±ï¿½
 		aaa(node[root], 1);
 		
 		
-		// °á°ú°ª µµÃâ
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		for(int i=1; i<N+1; i++){
 			if(L[node[i].level] > node[i].order || L[node[i].level] == 0)
 				L[node[i].level] = node[i].order;
@@ -84,10 +84,10 @@ public class Q2250 {
 	}
 }
 
-/*// Ãâ·Â
+/*// ï¿½ï¿½ï¿½
 System.out.println();
 for(int i=1; i<N+1; i++){
-	System.out.print(i + "¹øÂ°  order : " + node[i].order + " level : " + node[i].level);
+	System.out.print(i + "ï¿½ï¿½Â°  order : " + node[i].order + " level : " + node[i].level);
 	if(node[i].getLeftChild() != null)
 		System.out.print(" leftChild : " + node[i].getLeftChild().value);
 	

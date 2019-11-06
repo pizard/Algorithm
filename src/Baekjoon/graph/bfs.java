@@ -1,4 +1,4 @@
-package graph;
+package Baekjoon.graph;
 
 public class bfs {
 

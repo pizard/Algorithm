@@ -1,4 +1,4 @@
-package tree.Q1167;
+package Baekjoon.tree.Q1167;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -12,9 +12,9 @@ public class Q1167ver2 {
 
 	
 	/* 
-	 * Æ®¸®ÀÇ Áö¸§
-	 * Æ®·¹¿¡¼­ ÀÓÀÇÀÇ µÎ Á¡»çÀÌÀÇ °Å¸®Áß °¡Àå ±ä °Í
-	 * 1: Á¤Á¡ÀÇ °³¼ö
+	 * Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	 * Æ®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Å¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½
+	 * 1: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	 * 2: start Node / end Node / Distance / -1
 	 */
 	public static void main(String[] args) throws IOException{
@@ -42,20 +42,20 @@ public class Q1167ver2 {
 			
 			while( (v2=sc.nextInt()) != -1){
 				int w = sc.nextInt();
-				// v1ÀÌ¶õ Edge¿¡ v2¸¦ ¿¬°áÇÏ°í cost¸¦ w·Î ¼³Á¤
+				// v1ï¿½Ì¶ï¿½ Edgeï¿½ï¿½ v2ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ costï¿½ï¿½ wï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 				g[v1].add(new Edge(v2, w)); 
 			}
 		}
 
 		
-		// 1(start)·Î ºÎÅÍÀÇ °Å¸® Á¤¸®
+		// 1(start)ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Å¸ï¿½ ï¿½ï¿½ï¿½ï¿½
 		bfs(1);
 		
 		int max = dist[1];
 		int idx = 1;
 		
 		
-		// °Å¸® Áß ÃÖ´ë°ª µµÃâ
+		// ï¿½Å¸ï¿½ ï¿½ï¿½ ï¿½Ö´ë°ª ï¿½ï¿½ï¿½ï¿½
 		for( int i = 2; i<n; i++){
 			if( max <dist[i]){
 				idx=i;

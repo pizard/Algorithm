@@ -1,4 +1,4 @@
-package graph.Q7576;
+package Baekjoon.graph.Q7576;
 
 import java.util.Scanner;
 
@@ -30,10 +30,10 @@ public class Q7576_v2 {
 		
 		
 		if(count==0)
-			// ´Ù ÀÍÀ» ¼ö ¾ø´Â °æ¿ì
+			// ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 			System.out.println("-1");
 		else if(count == tomatoNum){
-			// ´Ù ÀÍ¾îÀÖ´Â °æ¿ì
+			// ï¿½ï¿½ ï¿½Í¾ï¿½ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½
 			System.out.println("0");
 		}else{
 			for(int i=0;i<M+N-1;i++){

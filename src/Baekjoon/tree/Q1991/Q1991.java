@@ -1,4 +1,4 @@
-package tree.Q1991;
+package Baekjoon.tree.Q1991;
 
 import java.util.Scanner;
 
@@ -45,7 +45,7 @@ public class Q1991 {
 		for(int i=0; i<N; i++){
 			System.out.println("-------------------------");
 		}
-		// ÀüÀ§¼øÈ¸
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¸
 		for(int i=0; i<N; i++){
 
 		}

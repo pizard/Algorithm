@@ -1,4 +1,4 @@
-package Q1026;
+package Baekjoon.Q1026;
 
 import java.util.Scanner;
 

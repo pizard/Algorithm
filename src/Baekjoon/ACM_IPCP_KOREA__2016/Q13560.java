@@ -1,4 +1,4 @@
-package ACM_IPCP_KOREA__2016;
+package Baekjoon.ACM_IPCP_KOREA__2016;
 
 import java.util.Scanner;
 
@@ -9,7 +9,7 @@ public class Q13560 {
 		Scanner scan = new Scanner(System.in);
 		int teamNum = scan.nextInt();
 		int[] score = new int [teamNum];
-		int checkPoint1 = 0;// ÃÑ Á¡¼ö
+		int checkPoint1 = 0;// ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		int[] checkPoint2 = new int [teamNum];
 		int result=0;
 		

@@ -1,4 +1,4 @@
-package testpackage;
+package Baekjoon.testpackage;
 
 import java.util.Scanner;
 
@@ -15,7 +15,7 @@ public class Q1991 {
 			node[i][1] = scan.next().charAt(0);
 			node[i][2] = scan.next().charAt(0);
 		}
-		// ÀüÀ§¼øÈ¸
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¸
 		aaa('A', N, 'a');
 		System.out.println();
 		aaa('A', N, 'b');

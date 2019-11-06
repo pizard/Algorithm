@@ -1,4 +1,4 @@
-package DP.Q2293_COIN;
+package Baekjoon.DP.Q2293_COIN;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,11 +8,11 @@ import java.util.StringTokenizer;
 public class Q2293 {
 
 	
-	// N°¡Áö Á¾·ùÀÇ µ¿Àü
-	// ±× °¡Ä¡ÀÇ ÇÕÀÌ K¿øÀÎ °æ¿ìÀÇ ¼ö
-	// Ã¹ÁÙÀÇ n°ú K
-	// °¢°¢ nÀÇ °¡Ä¡
-	// °æ¿ìÀÇ ¼ö´Â 2^31º¸´Ù ÀÛÀ½
+	// Nï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	// ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Kï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
+	// Ã¹ï¿½ï¿½ï¿½ï¿½ nï¿½ï¿½ K
+	// ï¿½ï¿½ï¿½ï¿½ nï¿½ï¿½ ï¿½ï¿½Ä¡
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 2^31ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	
 	public static void main(String[] args) {
 		Q2293 main = new Q2293();
@@ -50,7 +50,7 @@ public class Q2293 {
 						D[i] += D[i-j];
 					}
 					else{
-						System.out.println(i + "¹øÂ° °ª : " + D[i]);
+						System.out.println(i + "ï¿½ï¿½Â° ï¿½ï¿½ : " + D[i]);
 						break;
 					}
 				}

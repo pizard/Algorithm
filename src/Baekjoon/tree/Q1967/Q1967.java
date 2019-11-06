@@ -1,4 +1,4 @@
-package tree.Q1967;
+package Baekjoon.tree.Q1967;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,8 +11,8 @@ import java.util.Queue;
 import java.util.StringTokenizer;
 
 public class Q1967 {
-	// Æ®¸®ÀÇ Áö¸§
-	// ºÎ¸ð³ëµåÀÇ ¹øÈ£   /  ÀÚ½Ä³ëµå   /  °¡ÁßÄ¡
+	// Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	// ï¿½Î¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È£   /  ï¿½Ú½Ä³ï¿½ï¿½   /  ï¿½ï¿½ï¿½ï¿½Ä¡
 	
 	public static void main(String[] args){
 		Q1967 main = new Q1967();

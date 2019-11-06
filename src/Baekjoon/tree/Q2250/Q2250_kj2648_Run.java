@@ -1,4 +1,4 @@
-package tree.Q2250;
+package Baekjoon.tree.Q2250;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package tree.Q1967;
+package Baekjoon.tree.Q1967;
 
 public class Q1967_ox1230 {
 

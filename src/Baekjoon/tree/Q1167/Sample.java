@@ -1,4 +1,4 @@
-package tree.Q1167;
+package Baekjoon.tree.Q1167;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -28,9 +28,9 @@ public class Sample {
 
 	
 	/* 
-	 * Æ®¸®ÀÇ Áö¸§
-	 * Æ®·¹¿¡¼­ ÀÓÀÇÀÇ µÎ Á¡»çÀÌÀÇ °Å¸®Áß °¡Àå ±ä °Í
-	 * 1: Á¤Á¡ÀÇ °³¼ö
+	 * Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	 * Æ®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Å¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½
+	 * 1: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	 * 2: start Node / end Node / Distance / -1
 	 */
 	

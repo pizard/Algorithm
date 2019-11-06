@@ -1,4 +1,4 @@
-package testpackage;
+package Baekjoon.testpackage;
 
 public class Q10172 {
 

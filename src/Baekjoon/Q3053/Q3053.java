@@ -1,4 +1,4 @@
-package Q3053;
+package Baekjoon.Q3053;
 
 import java.util.Scanner;
 

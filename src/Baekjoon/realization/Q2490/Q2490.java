@@ -1,4 +1,4 @@
-package realization.Q2490;
+package Baekjoon.realization.Q2490;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -33,19 +33,19 @@ public class Q2490 {
 					result[i]++;
 				switch(result[i]){
 					case 0:
-						System.out.println("E");	// À· - ¹è 4    1 1 1 1  D
+						System.out.println("E");	// ï¿½ï¿½ - ï¿½ï¿½ 4    1 1 1 1  D
 						break;
 					case 1:
-						System.out.println("A");	// µµ - ¹è 1 µî 3 0 1 1 1  A
+						System.out.println("A");	// ï¿½ï¿½ - ï¿½ï¿½ 1 ï¿½ï¿½ 3 0 1 1 1  A
 						break;
 					case 2:
-						System.out.println("B");	// °³ - ¹è 2 µî 2 0 0 1 1  B
+						System.out.println("B");	// ï¿½ï¿½ - ï¿½ï¿½ 2 ï¿½ï¿½ 2 0 0 1 1  B
 						break;
 					case 3:
-						System.out.println("C");	// °É - ¹è 3 µî 1 0 0 0 1  C
+						System.out.println("C");	// ï¿½ï¿½ - ï¿½ï¿½ 3 ï¿½ï¿½ 1 0 0 0 1  C
 						break;
 					case 4:
-						System.out.println("D");	// ¸ð - µî 4    0 0 0 0  E
+						System.out.println("D");	// ï¿½ï¿½ - ï¿½ï¿½ 4    0 0 0 0  E
 						break;
 					default:
 						break;

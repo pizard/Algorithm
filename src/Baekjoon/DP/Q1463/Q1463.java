@@ -1,4 +1,4 @@
-package DP.Q1463;
+package Baekjoon.DP.Q1463;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,19 +1,17 @@
-package tree.Q1167;
+package Baekjoon.tree.Q1167;
 
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
 
-import tree.Q11725.Q11725_ver2.TreeNode;
-
 public class Q1167 {
 
 	
 	/* 
-	 * Æ®¸®ÀÇ Áö¸§
-	 * Æ®·¹¿¡¼­ ÀÓÀÇÀÇ µÎ Á¡»çÀÌÀÇ °Å¸®Áß °¡Àå ±ä °Í
-	 * 1: Á¤Á¡ÀÇ °³¼ö
+	 * Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	 * Æ®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Å¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½
+	 * 1: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	 * 2: start Node / end Node / Distance / -1
 	 */	
 	

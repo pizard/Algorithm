@@ -1,4 +1,4 @@
-package tree.Q1967;
+package Baekjoon.tree.Q1967;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
