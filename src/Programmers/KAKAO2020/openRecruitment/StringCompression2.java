@@ -1,6 +1,6 @@
 package Programmers.KAKAO2020;
 
-public class stringCompression2 {
+public class StringCompression2 {
     public static int solution(String s) {
         int answer = 0;
         int wordLoc = 0;

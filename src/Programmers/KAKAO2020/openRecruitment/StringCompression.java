@@ -2,7 +2,7 @@ package Programmers.KAKAO2020;
 
 // 문자열 압출 : https://programmers.co.kr/learn/courses/30/lessons/60057
 
-public class stringCompression {
+public class StringCompression {
 
     public static int solution(String s) {
         int answer = 0;
