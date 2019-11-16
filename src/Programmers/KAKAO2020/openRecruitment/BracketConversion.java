@@ -1,4 +1,4 @@
-package Programmers.KAKAO2020;
+package Programmers.KAKAO2020.openRecruitment;
 
 import java.util.Stack;
 

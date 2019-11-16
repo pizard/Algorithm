@@ -1,4 +1,4 @@
-package Programmers.KAKAO2020;
+package Programmers.KAKAO2020.openRecruitment;
 
 public class LockAndKey {
     // (0,0), (0,1), (0,2) ...

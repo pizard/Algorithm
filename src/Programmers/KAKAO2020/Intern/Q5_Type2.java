@@ -1,6 +1,6 @@
 package Programmers.KAKAO2020.Intern;
 
-public class Q5 {
+public class Q5_Type2 {
     public int solution(int[] stones, int k) {
         int answer = 0;
         int location = -1;

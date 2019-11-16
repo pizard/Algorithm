@@ -1,4 +1,4 @@
-package Programmers.KAKAO2020;
+package Programmers.KAKAO2020.openRecruitment;
 
 // 문자열 압출 : https://programmers.co.kr/learn/courses/30/lessons/60057
 

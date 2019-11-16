@@ -1,4 +1,4 @@
-package Programmers.KAKAO2020;
+package Programmers.KAKAO2020.openRecruitment;
 
 public class StringCompression2 {
     public static int solution(String s) {
