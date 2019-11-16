@@ -18,17 +18,20 @@ public class Matrix {
     private static String status = "running";
 
 
-    public float[][] makeMatrix2D(String input_string){
+    public double[][] makeMatrix2D(String input){
         if("debug".equals(status))
-            input_string = "[[2,1,3],[1,2,4]]"; // 2 by 3 matrix
+            input = "[[2,1,3],[1,2,4]]"; // 2 by 3 matrix
 
 
-        String temp = input_string.replaceAll("\\{", "[");
+        String temp = input.replaceAll("\\{", "[");
+        temp = temp.replaceAll(" ", "");
         temp = temp.replaceAll("}", "]");
 
         Stack<Boolean> validation = new Stack<Boolean>();
 
-        float[][] result = new float[2][3];
+        double[][] result = new double[2][2];
+
+
         String[] temp1= temp.split("]");
         for(int i=0; i<temp1.length;i++){
             String[] temp2 = temp1[i].split("\\[");
@@ -37,12 +40,12 @@ public class Matrix {
                 if(!"".equals(temp2[j])){
                    String values[] = temp2[j].split(",");
                    for(int v=0; v<values.length;v++){
-                       result[i][v] = Float.parseFloat(values[v]);
+                       result[i][v] = Double.parseDouble(values[v]);
                    }
                 }
             }
             if(validation.empty()){
-                return new float[0][0];
+                return new double[0][0];
             }else{
                 validation.pop();
             }
@@ -51,7 +54,52 @@ public class Matrix {
         return  result;
     }
 
-    public void showMatrix2D(float matrix[][]){
+
+
+
+
+    public double[][] productMatrix2D(double matrix1[][], double matrix2[][]){
+        double[][] result = new double[matrix1.length][matrix2[0].length];
+        for(int i=0; i<matrix1.length; i++){
+            for(int j=0; j<matrix2[0].length; j++){
+                for(int x=0; x<matrix1.length; x++) {
+                    result[i][j] += matrix1[i][x] * matrix2[x][j];
+                }
+            }
+        }
+        return result;
+    }
+
+
+
+
+    public double[][][] forRoIAlignXY(double[][][] matrix){
+        // (x.location , y.location, value)
+        double[][][] result = new double[matrix.length][matrix[0].length][matrix[0][0].length];
+        for (int v = 0; v < matrix[0][0].length; v++) { // value
+            for(int x=0; x<matrix.length; x++){ // location.x
+                for(int y=0; y<matrix[0].length; y++) { // location.y
+                    if(v==0){
+                        result[x][y][v] = (matrix[0][0][v] + ((y + 0.5) * (matrix[0][matrix.length - 1][v] - matrix[0][0][v])) / matrix[0].length);
+                    }else{
+                        result[x][y][v] = (matrix[0][0][v] + ((y + 0.5) * (matrix[matrix.length - 1][0][v] - matrix[0][0][v])) / matrix[0].length);
+                    }
+                }
+
+            }
+        }
+        return result;
+    }
+
+
+    public void showMatrix3D(double matrix[][][]){
+        for(int i=0; i<matrix.length; i++){
+            showMatrix2D(matrix[i]);
+        }
+        System.out.println();
+    }
+
+    public void showMatrix2D(double matrix[][]){
         System.out.println("---------------- (x ,y) Matrix ----------------");
         System.out.print("   ");
         for(int k=0; k<matrix[0].length;k++){
@@ -69,16 +117,4 @@ public class Matrix {
         System.out.println("-----------------------------------------------");
     }
 
-
-    public float[][] productMatrix2D(float matrix1[][], float matrix2[][]){
-        float[][] result = new float[matrix1.length][matrix2[0].length];
-        for(int i=0; i<matrix1.length; i++){
-            for(int j=0; j<matrix2[0].length; j++){
-                for(int x=0; x<matrix1.length; x++) {
-                    result[i][j] += matrix1[i][x] * matrix2[x][j];
-                }
-            }
-        }
-        return result;
-    }
 }
