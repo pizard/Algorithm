@@ -1,3 +1,1 @@
-from .Greedy import *
-
-Greedy.
+from Programmers.Alignment import *
