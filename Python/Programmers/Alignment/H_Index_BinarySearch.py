@@ -13,7 +13,7 @@ H-Index는 과학자의 생산성과 영향력을 나타내는 지표입니다. 
 '''
 
 
-# Idea3 : Binary Search
+# Idea3 : Binary Search.py
 # 논문 갯수 : PaperNum, 인용 횟수 : QuoteNum
 # Control -> PaperNum
 # 1. PaperNum & QuoteNum 비교

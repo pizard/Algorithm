@@ -1,5 +1,6 @@
-def binary_search(target, data):
-    data.sort()
+def binary_search(target, data, sort = False):
+    if not sort:
+        data.sort()
     start = 0
     end = len(data) - 1
 
