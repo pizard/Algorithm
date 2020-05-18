@@ -1,1 +1,5 @@
 # Created by .ignore support plugin (hsz.mobi)
+.DS_Store
+.gitignore
+venv
+!/BeakJoon/SamsungSW/beedEscape_refer.py
