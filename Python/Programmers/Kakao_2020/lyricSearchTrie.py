@@ -1,9 +1,4 @@
 # 1 depth : 단어 길이
-# 2 depth : 첫 문자
-# 3 depth : 둘째 문자
-# ...
-
-# 1 depth : 단어 길이
 class Trie:
     def __init__(self):
         self.wordLength = {} # 단어의 길이 (length : Node)
@@ -31,18 +26,18 @@ class Trie:
 class Node:
     def __init__(self, char = None):
         self.char = char      # 해당 Node의 문자
-        self.childCount = 0 # 하위 단어의 갯수
-        self.child = {}     # 하위 단어
+        self.childCount = 0   # 하위 단어의 갯수
+        self.child = {}       # 하위 단어
 
 
     def insertNode(self, word): # 첫번째 문자에 기반한 Node 추가
-        self.childCount += 1
         if word[:1] not in self.child.keys():
             self.child[word[:1]] = Node(word[:1])
 
         if len(word) > 1:
             self.child[word[:1]].insertNode(word[1:])
 
+        self.childCount += 1
 
     def getQueryNum(self, query):
         queryNum = self.childCount
@@ -75,10 +70,11 @@ def solution(words, queries):
             answer.append(front.getQueryNum(query))
     print(answer)
     return answer
-solution(["frodo", "front", "frost", "frozen", "frame", "kakao", ""], ["", "?????", "fro??", "????o", "fr???", "fro???", "pro?"])
 solution(["frodo", "front", "frost", "frozen", "frame", "kakao"], ["?????", "fro??", "????o", "fr???", "fro???", "pro?"])
-solution(["frodo", "front", "frost", "frosa", "frodt", "frwme", "frozen", "frame", "kakao", ""], ["", "?????", "fro??", "????o", "fr???", "fro???", "pro?"])
-solution(["frodo", "front", "frost", "frosa", "frodt", "frwme", "frozen", "frame", "kakao"], ["?????", "fro??", "????o", "fr???", "fro???", "pro?"])
+solution(["frodo", "front", "frost", "frozen", "frame", "kakao"], ["?????", "fro??", "????o", "fr???", "fro???", "pro?"])
+# solution(["frodo", "front", "frost", "frosa", "frodt", "frwme", "frozen", "frame", "kakao", ""], ["", "?????", "fro??", "????o", "fr???", "fro???", "pro?"])
+# solution(["frodo", "front", "frost", "frosa", "frodt", "frwme", "frozen", "frame", "kakao"], ["?????", "fro??", "????o", "fr???", "fro???", "pro?"])
+# solution(["frodo", "front", "frost", "frozen", "frame", "kakao", ""], ["", "?????", "fro??", "????o", "fr???", "fro???", "pro?"])
 
 
 
