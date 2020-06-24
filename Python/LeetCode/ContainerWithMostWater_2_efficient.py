@@ -2,30 +2,26 @@
 
 
 class Solution:
-    def maxArea(self, heights) -> int:
-        result = 0
-        height_dict = {}
-        for i, height in enumerate(heights):
-            if height not in height_dict.keys():
-                height_dict[height] = [i]
+    def maxArea(self, height) -> int:
+        water = 0
+        head = 0
+        tail = len(height) - 1
+
+        for cnt in range(len(height)):
+
+            width = abs(head - tail)
+
+            if height[head] < height[tail]:
+                res = width * height[head]
+                head += 1
             else:
-                height_dict[height].append(i)
+                res = width * height[tail]
+                tail -= 1
 
-        leftIndex = len(heights)
-        rightIndex = 0
-        height_dict_sorted = sorted(height_dict.items(), reverse=True)
-        for sortedHeight in height_dict_sorted:
-            for index in sortedHeight[1]:
-                if leftIndex > index:
-                    leftIndex = index
-                if rightIndex < index:
-                    rightIndex = index
+            if res > water:
+                water = res
 
-            tempValue = (rightIndex - leftIndex) * sortedHeight[0]
-            if tempValue > result:
-                result = tempValue
-
-        return result
+        return water
 
 solution = Solution()
 # print(solution.maxArea([1,8,6,2,5,4,8,3,7]))

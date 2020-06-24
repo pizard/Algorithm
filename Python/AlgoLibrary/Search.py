@@ -14,4 +14,11 @@ def binary_search(target, data, sort = False):
         else:
             end = mid -1
 
+
+    # 무조건 더 큰 값을 출력
+    # while data[mid] < target:
+    #     mid += 1
+
     return mid
+
+
