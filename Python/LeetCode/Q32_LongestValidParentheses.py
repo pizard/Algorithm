@@ -19,4 +19,11 @@ class Solution:
                             answer = i - startIdx + 1
 
                     parentheses[startIdx] -= 1 # 1씩 제거
+
         return answer
+
+
+
+
+sol = Solution()
+sol.longestValidParentheses("(())()(()((")

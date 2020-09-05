@@ -113,6 +113,23 @@ class SortedDoublyLinkedList: # ascending
         """
 
 
+def makeBinaryTree(treeList):
+    if len(treeList) == 0:
+        return None
+    root = TreeNode(treeList.pop(0))
+    checkNodes = [root]
+    while(treeList):
+        checkNode = checkNodes.pop(0)
+        checkNode.left = TreeNode(treeList.pop(0))
+        checkNodes.append(checkNode.left)
+        checkNode.right = TreeNode(treeList.pop(0))
+        checkNodes.append(checkNode.right)
+    return root
+
+
+
+
+
 sdll = SortedDoublyLinkedList()
 sdll.append(1)
 sdll.append(4)

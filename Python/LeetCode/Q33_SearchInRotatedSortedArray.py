@@ -3,7 +3,6 @@
 # 방법 2 : 한번에 찾기
 # ---------------------------------------------------------- #
 # Solution 1
-
 def binarySearch(data, target):
     start = 0
     end = len(data) - 1
